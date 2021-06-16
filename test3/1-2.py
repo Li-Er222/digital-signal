@@ -8,7 +8,6 @@ wave.make_audio()
 plt.subplot(4,1,1)
 wave.plot()
 
-
 #具有恒定音高的片段
 #截取片段
 segment = wave.segment(start=1.1, duration=0.3)
@@ -23,8 +22,6 @@ wave1.play('temp1.wav')
 spectrum = segment.make_spectrum()
 plt.subplot(4,1,3)
 spectrum.plot(high=7000)
-
-
 
 wave = read_wave('D:/signal/digital-signal/test3/170255_dublie_trumpet.wav')
 segment = wave.segment(1.1, 0.3)
